@@ -57,7 +57,7 @@
                             <span><a href="#">ABOUT</a></span>
                             <span><a href="#">RESOURCES</a></span>
                             <span><a href="#">EVENTS</a></span>
-                            <span><a href="#">CONTACT US</a></span>
+                            <span><a href="contactUs.html">CONTACT US</a></span>
                             <span><a href="login.html">SIGN IN</a></span>
                         </div>
                     </div>
@@ -66,9 +66,18 @@
             </nav>
         </div>
     </div>
-    <div class="main-content-holder background-image-holder flex" id="first-section-container">
-
-
+    <div class="main-content-holder background-image-holder flex center-center-items" id="first-section-container">
+        <div class="contact-us-form-holder flex flex-vertical">
+            <form action="contactUs.html" class="contact-us-form flex flex-vertical">
+                <div><input type="text" placeholder="FULL NAME" required class="name"></div>
+                <div><input type="email" placeholder="EMAIL ADDRESS" required class="email"></div>
+                <div><input type="text" placeholder="SUBJECT" maxlength="100" required class="subject"></div>
+                <div><textarea placeholder="TALK TO US..." maxlength="500" required class="content"></textarea></div>
+                <div><input type="submit" value="SUBMIT" class="submit"></div>
+            </form>
+        </div>
     </div>
+    <script src="javascript/flower-button.js"></script>
+    <script src="javascript/hover-dropdowns.js"></script>
 </body>
 </html>
