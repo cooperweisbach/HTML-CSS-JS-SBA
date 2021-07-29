@@ -20,11 +20,11 @@
     <div class="background-image-container flex center-center-items">
         <div class="signin-form-container flex dir-col">
             <div class="header-container"><h1>MEMBER LOGIN</h1></div>
-            <form action="#" class="signin-form flex dir-col">
+            <form action="login.html" class="signin-form flex dir-col">
                 <div class="entry-error flex center-center-items hidden">COMBINATION ENTERED NOT FOUND</div>
                 <div class="email-field flex dir-col flex center-center-items">
                     <div class="input-container email-input flex">
-                        <input type="text" placeholder="EMAIL">
+                        <input type="email" placeholder="EMAIL" required>
                         <i class="fas fa-envelope"></i>
                         <i class="fas fa-exclamation-circle"></i>
                     </div>
@@ -32,7 +32,7 @@
                 </div>
                 <div class="password-field flex dir-col center-center-items">
                     <div class="input-container password-input flex">
-                        <input type="password" placeholder="PASSWORD">
+                        <input type="password" placeholder="PASSWORD" required>
                         <i class="fas fa-lock"></i>
                         <i class="fas fa-exclamation-circle"></i>
                     </div>
@@ -40,11 +40,12 @@
                     <div class="forgot-password-container"><a href="">FORGOT PASSWORD?</a></div>
                 </div>
                 <div class="submit-button-container flex center-center-items">
-                    <button class="submit-button"type="button">LOGIN</button>
+                    <input type = "submit" value="LOGIN" class="submit-button">
                 </div>
             </form>
-            <div class="not-a-member-container flex center-center-items">
+            <div class="not-a-member-container flex">
                 <a href="">NOT A MEMBER?</a>
+                <a href="index.html">HOME</a>
             </div>
         </div>
     </div>
