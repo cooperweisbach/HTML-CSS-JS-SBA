@@ -161,7 +161,7 @@ a {
 #first-section-container::before{
     content: "";
     background-image: url("../images/drawnGarden1.jpg");
-    object-fit:contain;
+    background-size:contain;
     opacity: 0.5;
     position: absolute;
     top: 0;

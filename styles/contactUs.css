@@ -156,11 +156,23 @@ a {
     margin: 2rem 0;
 }
 
-#first-section-container{
+#first-section-container::before{
+    position: absolute;
+    content: "";
     background-image: url(../images/contactUs3.jpg);
     background-size: cover;
-    height: 120vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+}
 
+#first-section-container{
+    margin-top:5rem;
+    position: relative; 
+    height: 120vh;
+    z-index: -1;
 }
 
 
