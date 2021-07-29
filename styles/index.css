@@ -172,11 +172,45 @@ a {
 
 #first-section-container{
     position: relative;
-    height: 25rem;
+    height: 27.5rem;
     width: 100%;
     margin-top:5rem; 
     z-index:-1;
+    justify-content: space-evenly;
+    padding-inline: 8vw;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
 } 
+
+.club-announcements-fp,
+.welcome-section-fp{
+    position: relative;
+    padding: 3px;
+    border-radius: 3px;
+}
+.club-announcements-fp {
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-image: linear-gradient(to left, white, rgba(255, 255, 255, 0) 90%);
+}
+
+.welcome-section-fp {
+    align-items: flex-start;
+    background-image: linear-gradient(to right, white, rgba(255, 255, 255, 0) 90%);
+}
+
+.club-announcements-fp h2,
+.welcome-section-fp h2,
+.club-announcements-fp p,
+.welcome-section-fp p{
+    margin:0;
+}
+
+.club-announcements-fp h2,
+.welcome-section-fp h2 {
+    font-size:30px;
+    font-weight: bolder;
+}
 
 #second-section-container{
     width: 100vw;

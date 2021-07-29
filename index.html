@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap" rel="stylesheet">
-    <style src="javascript/practiceWebsite.js"></style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
     body {
         font-family: 'Signika Negative', sans-serif;
@@ -66,8 +66,22 @@
             </nav>
         </div>
     </div>
-    <div class="flex center-center-items" id="first-section-container">
-
+    <div class="flex flex-vertical" id="first-section-container">
+        <div class="welcome-section-fp top-right-flex-item flex flex-vertical"
+            data-aos="fade-left"
+            data-aos-easing="ease-in-sine"
+        >
+            <h2>WELCOME TO THE CLUB!</h2>
+            <p>Check out the JOIN US page if you're new...</p>
+        </div>
+        <div class="club-announcements-fp bottom-left-flex-item flex flex-vertical"
+            data-aos="fade-right"
+            data-aos-easing="ease-in-sine"
+        >
+            <h2>ANNOUNCEMENTS</h2>
+            <p>Check out some of our upcoming charity events!</p>
+            <p>Check out our lastest post on bee keeping!</p>
+        </div>
     </div>
     <div class="flex flex-vertical beauty-margin" id="second-section-container">
         <div class="table-label" id="upper-fp-table-label">
@@ -105,5 +119,9 @@
     </div>
     <script src="javascript/flower-button.js"></script>
     <script src="javascript/hover-dropdowns.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
