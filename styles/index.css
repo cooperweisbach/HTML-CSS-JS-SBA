@@ -1,8 +1,6 @@
-
 *{
     box-sizing: border-box;
 }
-
 
 body {
     height: 140vh;
@@ -52,7 +50,6 @@ body {
 
 .sub-level-header-container {
     display: flex;
-    /* padding: 0 2rem; */
     height: 5rem;
     align-items: center;
     overflow: hidden;
@@ -76,39 +73,69 @@ body {
     display: flex;
 }
 
-.span-links-container span {
+.span-header-link-container {
     padding-inline: 1rem;
 }
 
-.span-hover-dropdown{
-    
-}
-
-.span-links-container span a{
+.span-header-link-container a{
     display: inline-block;
-    /* padding-inline: 1rem; */
     padding-top: 10%;
     padding-bottom: 10%;
 }
-
-.container-of-spans span {
+.span-header-link-container,
+.span-logo-holder,
+.span-header-sign-in-container{
     border-top: 0.2rem solid tomato;
     border-bottom: 0.2rem solid tomato;
     display: flex;
     align-items: center;
 }
 
-.span-signin-container span:hover,
-.span-links-container span:hover{
+.span-header-sign-in-container:hover,
+.span-header-link-container:hover{
     border-top: 0.2rem solid black;
     border-bottom: 0.2rem solid black;
     transition: ease 1s;
+}
+
+.drop-down-menu {
+    border: 3px solid balck;
+    position: absolute;
+    width: 300px;
+    visibility:hidden;
+    transform: translateY(-200%);
+    transition: transform 0.5s ease-in;
+    background-color: tomato;
+}
+
+.link-div-container{
+    flex: 1;
+    padding: 3px 0;
+    justify-content: center;
+}
+
+.drop-down-holder{
+    justify-content: center;
+    flex: 1;
+}
+
+.icon{
+    height: 20px;
+    padding: 0 3%;
+}
+
+.show-dropdown-menu{
+    /* z-index: 99; */
+    visibility: visible;
+    transform: translateY(5rem);
+    transition: transform 0.5s ease-in;
 }
 
 a {
     color: black;
     text-decoration: none;
 }
+
 
 .logo-link {
     color: white;
