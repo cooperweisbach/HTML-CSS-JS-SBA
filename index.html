@@ -31,7 +31,7 @@
                         </span>
 
                             <div class="flex drop-down-holder" id="resources-drop-down-holder">
-                                <span class="span-header-link-container span-hover-dropdown" >RESOURCES
+                                <span class="span-header-link-container span-hover-dropdown">RESOURCES
                                     <svg class="pad-svg" width="22" height="11">
                                         <path d="M 0 0 L 9 10 M 9 10 L 18 0" stroke-width="1" stroke="black"></path>
                                     </svg>
@@ -50,7 +50,7 @@
                             </div>
 
                             <div class="flex drop-down-holder" id="events-drop-down-holder">
-                                <span class="span-header-link-container span-hover-dropdown" >EVENTS
+                                <span class="span-header-link-container span-hover-dropdown">EVENTS
                                     <svg class="pad-svg" width="22" height="11">
                                         <path d="M 0 0 L 9 10 M 9 10 L 18 0" stroke-width="1" stroke="black"></path>
                                     </svg>
@@ -81,10 +81,20 @@
                             </svg>
                         </button>
                         <div class= "hidden-menu-container flex flex-item pos-absolute flex-vertical align-items-center">
-                            <span><a href="#">JOIN US!</a></span>
-                            <span><a href="#">ABOUT</a></span>
-                            <span><a href="#">RESOURCES</a></span>
-                            <span><a href="#">EVENTS</a></span>
+                            <span class="block"><a href="#">JOIN US!</a></span>
+                            <span class="block"><a href="#">ABOUT</a></span>
+                            <button id="resources-button">RESOURCES
+                                <svg class="pad-svg" width="22" height="11">
+                                    <path d="M 0 0 L 9 10 M 9 10 L 18 0" stroke-width="1" stroke="black"></path>
+                                </svg>
+                            </button>
+                            <span id="resources-links" class="hide-resource-links"><a class="block" href="#">BLOG</a><a class="block" href="#">WEATHER, CLIMATE, ENERGY</a><a class="block" href="#">CLASSES</a></span>
+                            <button id="events-button">EVENTS
+                                <svg class="pad-svg" width="22" height="11">
+                                    <path d="M 0 0 L 9 10 M 9 10 L 18 0" stroke-width="1" stroke="black"></path>
+                                </svg>
+                            </button>
+                            <span id="events-links" class="hide-event-links"><a class="block" href="#">CHARITY</a><a class="block" href="#">FARMERS MARKET</a><a class="block" href="#">CALENDAR</a></span>
                             <span><a href="contactUs.html">CONTACT US</a></span>
                             <span><a href="login.html">SIGN IN</a></span>
                         </div>
@@ -147,9 +157,13 @@
             </p>
         </div>
     </div>
-    <div>
-
+    <div class="flex beauty-margin" id="fourth-section-container">
+        
     </div>
+    <footer>
+
+    </footer>
+    <script src="javascript/expandResourcesEvents.js"></script>
     <script src="javascript/flower-button.js"></script>
     <script src="javascript/hover-dropdowns.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
