@@ -3,8 +3,6 @@ const dropDownHolderResources = document.querySelector("#resources-drop-down-hol
 const dropDownMenuEvents = document.querySelector("#events-drop-down-menu");
 const dropDownHolderEvents = document.querySelector("#events-drop-down-holder");
 
-console.log(dropDownMenuResources);
-console.log(dropDownHolderResources);
 dropDownHolderResources.addEventListener("mouseover", showResourcesMenu);
 dropDownHolderResources.addEventListener("mouseleave", hideResourcesMenu);
 dropDownHolderEvents.addEventListener("mouseover", showEventsMenu);

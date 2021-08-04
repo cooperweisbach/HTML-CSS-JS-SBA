@@ -161,7 +161,7 @@ a {
 .hidden-menu-container{
     position:fixed;
     background: rgb(253, 135, 114);
-    /* z-index: 99; */
+    z-index: 99;
     min-height: 500px;
     height: calc(100vh - 5rem);
     width: 100%;
@@ -292,12 +292,59 @@ a {
 }
 
 #third-section-container{
-
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #fourth-section-container{
-
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    background-color: black;
+    width: auto;
+    height: 220px;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    margin-top:20px;
+    margin-bottom:20px;
+    justify-content: space-evenly;
+    z-index: -1;
 }
+
+.gallery-slides{
+    flex:1;
+    margin-inline: 10px;
+    height: 200px;
+    width: 300px;
+}
+
+.gallery-slides img{
+    object-fit: cover;
+}
+
+.scroll-container{
+    position:absolute;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    bottom: 50%;
+    margin-inline: 10px;
+    cursor: pointer;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.prev-image{
+    left:0;
+}
+
+.next-image{
+    right:0;
+}
+
+
+
 
 @media (max-width:800px) {
     .hidden-flower-button-container {
